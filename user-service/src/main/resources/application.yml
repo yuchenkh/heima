@@ -11,11 +11,15 @@ spring:
     username: root
     password: ${MYSQL_PWD}
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:10086/eureka
+# 使用 Eureka 时配置
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:10086/eureka
 
 logging:
   level:

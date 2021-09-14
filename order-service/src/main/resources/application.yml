@@ -12,6 +12,9 @@ spring:
     username: root
     password: ${MYSQL_PWD}
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 
 
 mybatis:
@@ -22,7 +25,7 @@ logging:
   level:
     org.example: debug
 
-eureka:
-  client:
-    service-url:  # eureka的地址信息
-      defaultZone: http://127.0.0.1:10086/eureka
+#eureka:
+#  client:
+#    service-url:  # eureka的地址信息
+#      defaultZone: http://127.0.0.1:10086/eureka

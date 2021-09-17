@@ -23,3 +23,6 @@
 ### Eureka
 在 classpath 中有 `spring-cloud-starter-netflix-eureka-client` 的情况下，应用会自动注册到 Eureka server 中
 （需配置 Eureka server 地址）。可通过 `eureka.client.enabled=false` 人为停止注册。
+
+### Feign
+引入依赖 `spring-cloud-starter-openfeign` 并在主启动类注解 `@EnableFeignClients`。

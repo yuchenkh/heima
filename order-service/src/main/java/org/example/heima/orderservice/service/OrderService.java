@@ -1,9 +1,9 @@
 package org.example.heima.orderservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.heima.orderservice.client.UserClient;
+import org.example.heima.feignapi.client.UserClient;
+import org.example.heima.feignapi.entity.User;
 import org.example.heima.orderservice.entity.Order;
-import org.example.heima.orderservice.entity.User;
 import org.example.heima.orderservice.mapper.OrderMapper;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
 public class OrderService {
 
     private final OrderMapper mapper;
-
-//    // 使用 RestTemplate 远程调用
-//    private final RestTemplate restTemplate;
 
     // 使用 Feign client 远程调用
     private final UserClient client;

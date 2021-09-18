@@ -26,3 +26,6 @@
 
 ### Feign
 引入依赖 `spring-cloud-starter-openfeign` 并在主启动类注解 `@EnableFeignClients`。
+
+把 Feign client 抽取到单独的模块后，依赖这个 client 的模块的 Spring 容器不能扫描到这个 client，需要
+在 `@EnableFeignClients` 注解上指定这个 client 类在哪。

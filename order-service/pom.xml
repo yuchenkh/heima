@@ -38,6 +38,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!-- Feign API -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>feign-api</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>

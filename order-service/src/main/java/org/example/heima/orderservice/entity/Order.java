@@ -1,6 +1,7 @@
 package org.example.heima.orderservice.entity;
 
 import lombok.Data;
+import org.example.heima.feignapi.entity.User;
 
 // Sep 9, 2021
 @Data

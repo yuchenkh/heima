@@ -35,13 +35,13 @@ public class UserController {
      * 路径： /user/2
      *
      * @param id 用户 ID
-     * @param truth 该参数与 Request header {@code truth} 绑定
+     * @param msg 该参数与 Request header {@code msg} 绑定
      * @return 用户实体
      */
     @GetMapping("/get/{id}")
     public User getById(@PathVariable("id") Long id,
-                        @RequestHeader(value = "Truth", required = false) String truth) {
-        System.out.println("Truth: " + truth);
+                        @RequestHeader(value = "msg", required = false) String msg) {
+        System.out.println("Message: " + msg);
         return userService.getById(id);
     }
 }

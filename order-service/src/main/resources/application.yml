@@ -8,16 +8,13 @@ spring:
     active:
       dev
   datasource:
-    url: jdbc:mysql://localhost:3306/cloud_order?useSSL=false
+    url: jdbc:mysql://mysql:3306/cloud_order?useSSL=false
     username: root
-    password: ${MYSQL_PWD}
+    password: ${MYSQL_PWD:123456}
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     nacos:
-      server-addr: localhost:8849
-      discovery:
-        cluster-name: Wuhan
-        namespace: 09e6c865-cf6f-41a4-97cb-9addb9308b18
+      server-addr: nacos:8848
 
 mybatis:
   configuration:

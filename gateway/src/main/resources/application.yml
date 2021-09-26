@@ -6,9 +6,7 @@ spring:
     name: gateway
   cloud:
     nacos:
-      server-addr: localhost:8849
-      discovery:
-        namespace: 09e6c865-cf6f-41a4-97cb-9addb9308b18
+      server-addr: nacos:8848
     gateway:
       routes:
         - id: user
